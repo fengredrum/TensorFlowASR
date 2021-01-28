@@ -34,9 +34,9 @@ parser.add_argument("--tfrecords", default=False, action="store_true", help="Whe
 
 parser.add_argument("--tfrecords_shards", type=int, default=16, help="Number of tfrecords shards")
 
-parser.add_argument("--tbs", type=int, default=None, help="Train batch size per replica")
+parser.add_argument("--tbs", type=int, default=8, help="Train batch size per replica")
 
-parser.add_argument("--ebs", type=int, default=None, help="Evaluation batch size per replica")
+parser.add_argument("--ebs", type=int, default=4, help="Evaluation batch size per replica")
 
 parser.add_argument("--devices", type=int, nargs="*", default=[0], help="Devices' ids to apply distributed training")
 
