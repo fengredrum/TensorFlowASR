@@ -13,6 +13,7 @@ __pycache__
 venv
 
 # Additional
+.DS_Store
 .devcontainer
 LibriSpeech
 Models
